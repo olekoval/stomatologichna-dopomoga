@@ -27,7 +27,7 @@ SELECT COUNT(patient_repetitions) AS кiлькiсть_унiкальних_пац
                                 AND ech.is_correct
                                 AND ech.is_payment)
                      ) t
-      WHERE e.age_years < 18
-        AND EXTRACT(MONTH FROM e.starts) < 7
-      GROUP BY e.patient_id) t2;
+      WHERE age_years < 18
+        AND EXTRACT(MONTH FROM starts) < 7
+      GROUP BY patient_id) t2;
 
