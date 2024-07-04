@@ -12,6 +12,7 @@ SELECT COUNT(patient_repetitions) AS кiлькiсть_унiкальних_пац
      GROUP BY e.patient_id
      ) AS t;
  
+-- варіант 2
 
 SELECT COUNT(patient_repetitions) AS кiлькiсть_унiкальних_пацієнтів,
        AVG(patient_repetitions) AS середня_кiлькiсть_емз_на_пацієнта
